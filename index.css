@@ -1,0 +1,224 @@
+
+
+.section_top{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: white;
+}
+.image_container{
+   width: 100%;
+   max-width: 100%;
+   height: 400px;
+   margin: 0 auto;
+   display: flex;
+   background-image: url(./images/hero-bg-desktop.jpg);
+   background-size: cover;
+   align-items: center;
+   justify-content: space-evenly;
+   color: white;
+}
+
+.overlay_box{
+width: 40%;
+min-height: 300px;
+background-color: white;
+display: flex;
+justify-content: space-around;
+padding: 30px;
+margin-top: 280px;
+box-shadow: 2px 1px 9px gray;
+position: relative;
+flex-direction: column;
+
+}
+
+/*
+git config --global http.version HTTP/1.1
+git push 
+git config --global http.version HTTP/2
+*/
+
+label{
+   color: black;
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+}
+input[type=text]{
+   padding: 10px;
+   margin: 5px;
+   border: none;
+   border-bottom: 2px solid gray;
+}
+input[type=email]{
+   padding: 10px;
+   margin: 5px;
+   border: none;
+   border-bottom: 2px solid gray;
+}
+
+.left_text{
+   color: white;
+   
+
+}
+
+.middle_section{
+height: 190px;
+max-height: 100%;
+max-width: 70%;
+width: 70%;
+background-image: url(/patterns/pattern-curve-bottom-right.svg);
+background-size: contain;
+background-repeat: no-repeat;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-bottom: 0 auto;
+
+
+}
+.mid_box{
+margin-left: 120px;
+margin-top: 60px;
+}
+
+.bottom_section{
+background-color: rgb(32, 32, 32);
+justify-content: center;
+align-items: center;
+height: 200px;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+.bottom_content{
+color: white;
+display: flex;
+height: 100%;
+justify-content: space-around;
+align-items: center;
+}
+
+h1{
+   color: white;
+}
+h4{
+   color: white;
+}
+
+form{
+ 
+}
+
+.date_line{
+   white-space: nowrap;
+   overflow: hidden;
+   width: 100%;
+   display: flex;
+}
+.date_line input {
+  width: 46px;
+  text-align: center;
+}
+
+.time_line{
+   white-space: nowrap;
+   overflow: hidden;
+   width: 100%;
+   display: flex;
+   justify-content: stretch;
+   align-items: stretch;
+}
+
+.time_line input{
+   width: 46px;
+   text-align: center;
+
+}
+.time_line select{
+   border: none;
+   border-bottom: 2px solid black;
+   height: 74%;
+   width: 20%;
+   text-align: center;
+}
+
+.reservation_button{
+display: flex;
+width: 100%;
+}
+
+button{
+width: 100%;
+background-color: black;
+color: white;
+height: 50px;
+border: none;
+}
+
+/* Responsive*/
+
+@media (max-width: 768px){
+  h1{
+      color: white;
+   }
+
+   .image_container{
+      background-image: url(./images/hero-bg-mobile.jpg);
+      width: 100%;
+      max-width: 100%;
+      background-color: white;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      
+   }
+
+   .overlay_box{
+      max-width: 70%;
+      width: 70%;
+      height: 100%;
+      margin-top: 100px;
+      
+
+   }
+
+   .left_text{
+      justify-content: space-evenly;
+      text-align: center;
+      margin-top: 250px;
+
+   }
+
+   .middle_section{
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+      width: 100%;
+      max-width: 100%;
+      background-size: cover;
+   }
+   .mid_box{
+      margin: auto;
+   }
+   .bottom_section{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      text-align: center;
+
+   }
+  
+   
+}
